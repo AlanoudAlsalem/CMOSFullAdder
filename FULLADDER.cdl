@@ -1,0 +1,67 @@
+*******************************************************************************
+* CDL netlist
+*
+* Library : Training
+* Top Cell Name: FULLADDER
+* View Name: schematic
+* Netlist created: 06.Aug.2024 16:42:44
+*******************************************************************************
+
+*.SCALE METER
+*.GLOBAL vdd gnd
+
+*******************************************************************************
+* Library Name: Training
+* Cell Name:    FULLADDER
+* View Name:    schematic
+*******************************************************************************
+
+.SUBCKT FULLADDER b a c s cout
+*.PININFO s:O b:I cout:O a:I c:I
+
+M29 n5 c vdd vdd C5NPMOS w=200n l=30n m=1
+M20 n29 n24 gnd gnd C5NNMOS w=200n l=30n m=1
+M2 n19 n28 vdd vdd C5NPMOS w=200n l=30n m=1
+M24 n6 n5 gnd gnd C5NNMOS w=200n l=30n m=1
+M37 n0 n6 gnd gnd C5NNMOS w=200n l=30n m=1
+M38 n4 n32 vdd vdd C5NPMOS w=300n l=30n m=1
+M26 n5 n24 vdd vdd C5NPMOS w=200n l=30n m=1
+M39 n4 n32 gnd gnd C5NNMOS w=200n l=30n m=1
+M27 n5 n24 n11 gnd C5NNMOS w=200n l=30n m=1
+M43 cout n4 vdd vdd C5NPMOS w=200n l=30n m=1
+M22 s c n17 gnd C5NNMOS w=200n l=30n m=1
+M0 n23 n27 gnd gnd C5NNMOS w=200n l=30n m=1
+M14 s c n18 vdd C5NPMOS w=200n l=30n m=1
+M4 n27 b vdd vdd C5NPMOS w=300n l=30n m=1
+M12 n17 n24 gnd gnd C5NNMOS w=200n l=30n m=1
+M18 n12 c gnd gnd C5NNMOS w=200n l=30n m=1
+M6 n28 a vdd vdd C5NPMOS w=300n l=30n m=1
+M41 n9 n0 gnd gnd C5NNMOS w=200n l=30n m=1
+M17 n29 n24 vdd vdd C5NPMOS w=300n l=30n m=1
+M23 n17 n12 gnd gnd C5NNMOS w=200n l=30n m=1
+M28 n11 c gnd gnd C5NNMOS w=200n l=30n m=1
+M19 n12 c vdd vdd C5NPMOS w=300n l=30n m=1
+M9 n24 b n19 vdd C5NPMOS w=200n l=30n m=1
+M11 n23 a gnd gnd C5NNMOS w=200n l=30n m=1
+M16 n14 n12 vdd vdd C5NPMOS w=200n l=30n m=1
+M40 cout n0 vdd vdd C5NPMOS w=200n l=30n m=1
+M34 n32 n31 vdd vdd C5NPMOS w=300n l=30n m=1
+M15 s n24 n14 vdd C5NPMOS w=200n l=30n m=1
+M36 n0 n6 vdd vdd C5NPMOS w=300n l=30n m=1
+M30 n31 b vdd vdd C5NPMOS w=200n l=30n m=1
+M25 n6 n5 vdd vdd C5NPMOS w=300n l=30n m=1
+M35 n32 n31 gnd gnd C5NNMOS w=200n l=30n m=1
+M5 n27 b gnd gnd C5NNMOS w=200n l=30n m=1
+M21 n18 n29 vdd vdd C5NPMOS w=200n l=30n m=1
+M3 n28 a gnd gnd C5NNMOS w=200n l=30n m=1
+M32 n31 a n10 gnd C5NNMOS w=200n l=30n m=1
+M8 n24 a n25 vdd C5NPMOS w=200n l=30n m=1
+M7 n25 n27 vdd vdd C5NPMOS w=200n l=30n m=1
+M31 n10 b gnd gnd C5NNMOS w=200n l=30n m=1
+M42 cout n4 n9 gnd C5NNMOS w=200n l=30n m=1
+M13 s n29 n17 gnd C5NNMOS w=200n l=30n m=1
+M1 n24 b n23 gnd C5NNMOS w=200n l=30n m=1
+M10 n24 n28 n23 gnd C5NNMOS w=200n l=30n m=1
+M33 n31 a vdd vdd C5NPMOS w=200n l=30n m=1
+.ENDS
+

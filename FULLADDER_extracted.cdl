@@ -1,0 +1,66 @@
+*******************************************************************************
+* CDL netlist
+*
+* Library : Training
+* Top Cell Name: FULLADDER
+* View Name: extracted
+* Netlist created: 06.Aug.2024 16:42:44
+*******************************************************************************
+
+*.SCALE METER
+*.GLOBAL vdd gnd
+
+*******************************************************************************
+* Library Name: Training
+* Cell Name:    FULLADDER
+* View Name:    extracted
+*******************************************************************************
+
+.SUBCKT FULLADDER s b cout a c
+*.PININFO s:B b:B cout:B a:B c:B
+
+M645 n25 c vdd vdd C5NPMOS w=3e-7 l=3e-8 as=2.7e-14 ps=7.8e-7 ad=2.7e-14 pd=7.8e-7
+M608 n29 a n9 n9 C5NNMOS w=2e-7 l=3e-8 as=1.7e-14 ps=5.7e-7 ad=1.7e-14 pd=5.7e-7
+M647 n28 n19 vdd vdd C5NPMOS w=3e-7 l=3e-8 as=2.7e-14 ps=7.8e-7 ad=2.7e-14 pd=7.8e-7
+M646 n23 n12 s vdd C5NPMOS w=2e-7 l=3e-8 as=1.7e-14 ps=5.7e-7 ad=1.7e-14 pd=5.7e-7
+M630 n29 a vdd vdd C5NPMOS w=3e-7 l=3e-8 as=2.7e-14 ps=7.8e-7 ad=2.7e-14 pd=7.8e-7
+M651 vdd n17 cout vdd C5NPMOS w=2e-7 l=3e-8 as=1.7e-14 ps=5.7e-7 ad=1.7e-14 pd=5.7e-7
+M638 n14 b vdd vdd C5NPMOS w=2e-7 l=3e-8 as=1.7e-14 ps=5.7e-7 ad=1.7e-14 pd=5.7e-7
+M611 n13 b n9 n9 C5NNMOS w=2e-7 l=3e-8 as=1.7e-14 ps=5.7e-7 ad=1.7e-14 pd=5.7e-7
+M615 n22 n12 n18 n9 C5NNMOS w=2e-7 l=3e-8 as=1.7e-14 ps=5.7e-7 ad=1.7e-14 pd=5.7e-7
+M631 n26 n29 vdd vdd C5NPMOS w=2e-7 l=3e-8 as=1.7e-14 ps=5.7e-7 ad=1.7e-14 pd=5.7e-7
+M648 vdd n25 n23 vdd C5NPMOS w=2e-7 l=3e-8 as=1.7e-14 ps=5.7e-7 ad=1.7e-14 pd=5.7e-7
+M636 n14 a vdd vdd C5NPMOS w=2e-7 l=3e-8 as=1.7e-14 ps=5.7e-7 ad=1.7e-14 pd=5.7e-7
+M614 n14 a n27 n9 C5NNMOS w=2e-7 l=3e-8 as=1.7e-14 ps=5.7e-7 ad=1.7e-14 pd=5.7e-7
+M641 n19 n14 vdd vdd C5NPMOS w=3e-7 l=3e-8 as=2.7e-14 ps=7.8e-7 ad=2.7e-14 pd=7.8e-7
+M621 s n10 n15 n9 C5NNMOS w=2e-7 l=3e-8 as=1.7e-14 ps=5.7e-7 ad=1.7e-14 pd=5.7e-7
+M613 n8 n13 n9 n9 C5NNMOS w=2e-7 l=3e-8 as=1.7e-14 ps=5.7e-7 ad=1.7e-14 pd=5.7e-7
+M619 n19 n14 n9 n9 C5NNMOS w=2e-7 l=3e-8 as=1.7e-14 ps=5.7e-7 ad=1.7e-14 pd=5.7e-7
+M649 n17 n20 vdd vdd C5NPMOS w=3e-7 l=3e-8 as=2.7e-14 ps=7.8e-7 ad=2.7e-14 pd=7.8e-7
+M644 s c n21 vdd C5NPMOS w=2e-7 l=3e-8 as=1.7e-14 ps=5.7e-7 ad=1.7e-14 pd=5.7e-7
+M612 n9 a n8 n9 C5NNMOS w=2e-7 l=3e-8 as=1.7e-14 ps=5.7e-7 ad=1.7e-14 pd=5.7e-7
+M610 n8 b n12 n9 C5NNMOS w=2e-7 l=3e-8 as=1.7e-14 ps=5.7e-7 ad=1.7e-14 pd=5.7e-7
+M640 n10 n12 vdd vdd C5NPMOS w=3e-7 l=3e-8 as=2.7e-14 ps=7.8e-7 ad=2.7e-14 pd=7.8e-7
+M628 n11 n28 cout n9 C5NNMOS w=2e-7 l=3e-8 as=1.7e-14 ps=5.7e-7 ad=1.7e-14 pd=5.7e-7
+M633 n13 b vdd vdd C5NPMOS w=3e-7 l=3e-8 as=2.7e-14 ps=7.8e-7 ad=2.7e-14 pd=7.8e-7
+M637 n22 n12 vdd vdd C5NPMOS w=2e-7 l=3e-8 as=1.7e-14 ps=5.7e-7 ad=1.7e-14 pd=5.7e-7
+M617 n18 c n9 n9 C5NNMOS w=2e-7 l=3e-8 as=1.7e-14 ps=5.7e-7 ad=1.7e-14 pd=5.7e-7
+M650 cout n28 vdd vdd C5NPMOS w=2e-7 l=3e-8 as=1.7e-14 ps=5.7e-7 ad=1.7e-14 pd=5.7e-7
+M643 n21 n10 vdd vdd C5NPMOS w=2e-7 l=3e-8 as=1.7e-14 ps=5.7e-7 ad=1.7e-14 pd=5.7e-7
+M639 n22 c vdd vdd C5NPMOS w=2e-7 l=3e-8 as=1.7e-14 ps=5.7e-7 ad=1.7e-14 pd=5.7e-7
+M618 n10 n12 n9 n9 C5NNMOS w=2e-7 l=3e-8 as=1.7e-14 ps=5.7e-7 ad=1.7e-14 pd=5.7e-7
+M616 n27 b n9 n9 C5NNMOS w=2e-7 l=3e-8 as=1.7e-14 ps=5.7e-7 ad=1.7e-14 pd=5.7e-7
+M624 n9 n12 n15 n9 C5NNMOS w=2e-7 l=3e-8 as=1.7e-14 ps=5.7e-7 ad=1.7e-14 pd=5.7e-7
+M629 n9 n17 n11 n9 C5NNMOS w=2e-7 l=3e-8 as=1.7e-14 ps=5.7e-7 ad=1.7e-14 pd=5.7e-7
+M620 n20 n22 n9 n9 C5NNMOS w=2e-7 l=3e-8 as=1.7e-14 ps=5.7e-7 ad=1.7e-14 pd=5.7e-7
+M634 n16 a n12 vdd C5NPMOS w=2e-7 l=3e-8 as=1.7e-14 ps=5.7e-7 ad=1.7e-14 pd=5.7e-7
+M632 n12 b n26 vdd C5NPMOS w=2e-7 l=3e-8 as=1.7e-14 ps=5.7e-7 ad=1.7e-14 pd=5.7e-7
+M623 n25 c n9 n9 C5NNMOS w=2e-7 l=3e-8 as=1.7e-14 ps=5.7e-7 ad=1.7e-14 pd=5.7e-7
+M609 n12 n29 n8 n9 C5NNMOS w=2e-7 l=3e-8 as=1.7e-14 ps=5.7e-7 ad=1.7e-14 pd=5.7e-7
+M635 vdd n13 n16 vdd C5NPMOS w=2e-7 l=3e-8 as=1.7e-14 ps=5.7e-7 ad=1.7e-14 pd=5.7e-7
+M622 n15 c s n9 C5NNMOS w=2e-7 l=3e-8 as=1.7e-14 ps=5.7e-7 ad=1.7e-14 pd=5.7e-7
+M627 n17 n20 n9 n9 C5NNMOS w=2e-7 l=3e-8 as=1.7e-14 ps=5.7e-7 ad=1.7e-14 pd=5.7e-7
+M625 n28 n19 n9 n9 C5NNMOS w=2e-7 l=3e-8 as=1.7e-14 ps=5.7e-7 ad=1.7e-14 pd=5.7e-7
+M642 n20 n22 vdd vdd C5NPMOS w=3e-7 l=3e-8 as=2.7e-14 ps=7.8e-7 ad=2.7e-14 pd=7.8e-7
+M626 n15 n25 n9 n9 C5NNMOS w=2e-7 l=3e-8 as=1.7e-14 ps=5.7e-7 ad=1.7e-14 pd=5.7e-7
+.ENDS
